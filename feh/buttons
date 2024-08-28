@@ -1,0 +1,6 @@
+# disable next/prev img on scroll
+next_img
+prev_img
+
+zoom_in C-4
+zoom_out C-5

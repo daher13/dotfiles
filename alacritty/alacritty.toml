@@ -1,0 +1,25 @@
+import = ["~/.config/alacritty/themes/one-dark.toml"]
+
+[font]
+size = 10
+
+[font.bold]
+family = "Source Code Pro"
+style = "Extrabold"
+
+[font.italic]
+family = "Source Code Pro"
+style = "Italic"
+
+[font.normal]
+family = "Source Code Pro"
+style = "Medium"
+
+[scrolling]
+history = 50000
+
+
+[[keyboard.bindings]]
+key = "Back"
+mods = "Control"
+chars = "\u001b\u007f"

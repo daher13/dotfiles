@@ -1,0 +1,10 @@
+include "/usr/share/nano/*.nanorc"
+
+set autoindent
+set constantshow
+set emptyline
+#set nohelp
+set positionlog
+set softwrap
+set tabsize 4
+set tabstospaces

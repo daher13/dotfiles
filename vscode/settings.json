@@ -1,0 +1,63 @@
+{
+    "cSpell.language": "en,pt_BR",
+    "dotnetAcquisitionExtension.enableTelemetry": false,
+    "editor.fontFamily": "Fira Code Retina",
+    "editor.fontLigatures": true,
+    "editor.guides.bracketPairs": false,
+    "editor.minimap.enabled": false,
+    "editor.renderWhitespace": "all",
+    "editor.rulers": [
+        80,
+        120
+    ],
+    "editor.scrollbar.horizontalScrollbarSize": 5,
+    "editor.scrollbar.verticalScrollbarSize": 5,
+    "editor.stickyScroll.enabled": false,
+    "explorer.excludeGitIgnore": true,
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
+        "**/.history": true
+    },
+    "local-history.daysLimit": 3,
+    "local-history.enabled": 2,
+    "local-history.exclude": [
+        ".*/",
+        "node_modules/",
+        "package-lock.json"
+    ],
+    "local-history.maxDisplay": 150,
+    "local-history.saveDelay": 60,
+    "local-history.treeLocation": "localHistory",
+    "material-icon-theme.hidesExplorerArrows": true,
+    "redhat.telemetry.enabled": false,
+    "telemetry.telemetryLevel": "off",
+    "terminal.integrated.enablePersistentSessions": false,
+    "terminal.integrated.mouseWheelScrollSensitivity": 0.5,
+    "window.menuBarVisibility": "hidden",
+    "window.zoomLevel": 1,
+    "workbench.colorCustomizations": {
+        "tab.activeBorder": "#1E90FF",
+        "tab.activeModifiedBorder": "#FF0000",
+        "tab.inactiveModifiedBorder": "#AA0000"
+    },
+    "workbench.colorTheme": "One Dark Pro Darker",
+    "workbench.editor.highlightModifiedTabs": true,
+    "workbench.editor.tabActionCloseVisibility": false,
+    "workbench.editor.tabActionUnpinVisibility": false,
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.sideBar.location": "right",
+    "workbench.tree.enableStickyScroll": false,
+    "[latex]": {
+        "editor.suggestSelection": "recentlyUsedByPrefix",
+        "editor.wordWrap": "on"
+    },
+    "[racket]": {
+        "editor.formatOnType": true,
+        "editor.wordSeparators": "()[]{}\",'`;#|"
+    }
+}

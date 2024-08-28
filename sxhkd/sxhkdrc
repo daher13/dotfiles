@@ -1,0 +1,57 @@
+#!/bin/bash
+
+super + shift + r
+    pkill sxhkd; \
+    sxhkd ~/.config/sxhkd/*.conf & \
+    setxkbmap -layout us -variant altgr-intl
+
+super + shift + e
+    bspc quit
+
+super + shift + q
+    bspc node -c
+
+super + f
+    bspc desktop -l next
+
+super + shift + space
+    bspc node -t ~floating
+
+super + {p,n}
+    bspc node -f {prev,next}.'local.window.!hidden.!floating'
+
+super + period
+    bspc monitor -f next
+
+super + shift + period
+     bspc node -m next
+
+super + Tab
+    bspc desktop -f next.local.occupied
+
+super + {1-7,j,k,l,semicolon,apostrophe}
+    bspc desktop -f focused:^{1-7,1,2,3,4,5}
+
+super + shift + {1-7}
+    bspc node -d focused:^{1-7}
+
+super + comma; {1-7}
+    bspc desktop -f next:^{1-7}
+
+super + shift + comma; {1-7}
+    bspc node -d next:^{1-7}
+
+super + shift + {h,u}
+    bspc node {_,any.local.window.hidden} -g hidden -f
+
+super + shift + grave
+    font="FiraCode:pixelsize=18:style=Bold"; \
+    name=`bspc query -D -d --names`; \
+    newname=`dmenu -fn $font -p $name < /dev/null`; \
+    [ -n $newname ] && bspc desktop -n $newname
+
+super + {h,v}
+    bspc node -p {~east,~south}
+
+super + shift + m
+    bspc node -n 'last.!automatic'
